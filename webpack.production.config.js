@@ -8,11 +8,11 @@ var StatsPlugin = require('stats-webpack-plugin');
 
 module.exports = {
   entry: [
-    path.join(__dirname, 'app/main.js')
+    path.join(__dirname, 'app/javascripts/main.js')
   ],
   output: {
     path: path.join(__dirname, '/dist/'),
-    filename: '[name]-[hash].min.js'
+    filename: 'bundle.min.js'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),

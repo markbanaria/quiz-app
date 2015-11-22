@@ -1,22 +1,19 @@
 {
-  "name": "webpack-express-boilerplate",
+  "name": "quiz-app",
   "version": "0.1.0",
-  "description": "A boilerplate for running a Webpack workflow in Node express",
+  "description": "A quiz app for reviewing",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate.git"
+    "url": "https://github.com/markbanaria/quiz-app.git"
   },
   "keywords": [
     "express",
     "webpack",
     "node"
   ],
-  "author": "Christian Alfoni",
+  "author": "Mark Banaria",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate/issues"
-  },
   "homepage": "https://github.com/christianalfoni/webpack-express-boilerplate",
   "scripts": {
     "test": "",
@@ -27,7 +24,18 @@
   },
   "dependencies": {
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.1",
+    "node-bourbon": "^4.2.3",
+    "history": "^1.13.1",
+    "react-router": "^1.0.0",
+    "jquery": "^2.1.4",
+    "fastclick": "^1.0.6",
+    "jsx-loader": "^0.13.2",
+    "foundation": "^4.2.1-1",
+    "flux": "^2.1.1",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",

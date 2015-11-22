@@ -1,0 +1,27 @@
+//foundation and bourbon
+@import "../../node_modules/foundation/scss/foundation.scss";
+@import "../../node_modules/foundation/scss/normalize";
+@import "bourbon";
+
+//common
+@import "common/colors";
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.appbar {
+	background: red;
+	h2 {
+		line-height: 24px;
+		font-size: 20px;
+		color: white;
+		font-family: roboto;
+		font-weight: 500;
+
+		padding: 16px;
+		margin: 0;
+	}
+}
