@@ -1,10 +1,7 @@
 //react
-var React = require('react');
-
+import React from 'react'
 //Route dependencies
-var Router = require('react-router');
-var Route = Router.Route;
-var DefaultRoute = Router.DefaultRoute;
+import { Router, Route, Link, IndexRoute } from 'react-router'
 
 //views
 var Index = require('../Index.jsx');
@@ -13,11 +10,11 @@ var Chart = require('../views/Chart.jsx');
 var About = require('../views/About.jsx');
 
 var routes = (
-	<Route path="/" handler={Index}>
-		<Route name="table" path="table" handler={Table}/>
-		<Route name="chart" path="chart" handler={Chart}/>
-		<Route name="about" path="about" handler={About}/>
-		<DefaultRoute handler={Table}/>
+	<Route path="/" component={Index}>
+		<Route path="table" component={Table}/>
+		<Route path="chart" component={Chart}/>
+		<Route path="about" component={About}/>
+		<IndexRoute component={Table}/>
 	</Route>
 );
 

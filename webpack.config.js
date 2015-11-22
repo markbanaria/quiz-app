@@ -42,10 +42,10 @@ module.exports = {
       loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
     }, {
       test: /\.scss$/, 
-      loader: "style!css!sass?includePaths[]=" + bourbon 
+      loader: 'style!css!sass?includePaths[]=' + bourbon 
     }, {
       test: /\.jsx$/, 
-      loader: "jsx" 
+      loader: 'jsx!babel' 
     }]
   }
 };

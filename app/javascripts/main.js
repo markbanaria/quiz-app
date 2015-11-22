@@ -1,9 +1,9 @@
 //react dependencies
-var React = require('react');
-var Index = require('./Index.jsx');
+import React from 'react'
+import { render } from 'react-dom'
 
 //Route dependencies
-var Router = require('react-router');
+import { Router, Route } from 'react-router';
 
 //Route map
 var routes = require('./routes/Routes.jsx');
@@ -16,9 +16,9 @@ ScoreData.init();
 // Load Mock API Call
 ScoreAPI.getScoreData();
 
-Router.run(routes, Router.HashLocation, function(Root) {
-  React.render(<Root />, document.getElementById('content'));
-});
+import createBrowserHistory from 'history/lib/createBrowserHistory'
+let history = createBrowserHistory()
+render(<Router history={history}>{routes}</Router>, document.getElementById('content'))
 
 //foundation dependencies
 require('jquery');

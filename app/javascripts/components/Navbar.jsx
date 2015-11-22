@@ -1,6 +1,5 @@
-var React = require('react');
-var Router = require('react-router');
-var Link = Router.Link;
+import React from 'react'
+import { Router, Link } from 'react-router'
 
 var Navbar = React.createClass({
 
@@ -8,13 +7,13 @@ var Navbar = React.createClass({
 		return (
 			<div className="Navbar">
 				<div className="appbar section">
-					<h2>7 Wonders Score</h2>
+					<h2>Quiz App</h2>
 				</div>
 				<div className="drawer">
 					<div className="row">
-						<Link to="table">Table</Link>
-						<Link to="chart">Charts</Link>
-						<Link to="about">About</Link>
+						<Link to="/table" activeClassName="active">Table</Link>
+						<Link to="/chart" activeClassName="active">Charts</Link>
+						<Link to="/about" activeClassName="active">About</Link>
 					</div>
 				</div>
 				<div className="sub section">
